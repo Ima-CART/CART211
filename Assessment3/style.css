@@ -1,5 +1,8 @@
+
+
 body{
     font-family:"Roboto", sans-serif ;
+    background-color: #f7f2eb;
 
 }
 
@@ -11,6 +14,15 @@ a{ color: black;
     font-weight: bold;
 
 }
+
+a:hover{ color:rgb(168, 187, 149);
+
+}
+
+a.active{ color: hwb(201 9% 35%);
+          font-size: 20px;
+}
+
 
 nav{ margin-left: 50px;
      margin-top: 50px;
@@ -32,6 +44,7 @@ header img {
 }
 
 header h1{
+    color: #135c84;
     text-align: right;
     font-size: 25px;
     margin-bottom: 5px;
@@ -51,6 +64,11 @@ header h3{
     color:darkgrey;
 }
 
+p{ 
+    line-height: 1.5;
+
+}
+
 .book{
     display: grid;
     grid-template-columns: auto auto auto ;
@@ -58,6 +76,15 @@ header h3{
 
 .book img{
     width:100%;
+    height: 80%;
+    
+
+}
+
+.book figcaption{ 
+    font-weight: 600 ;
+    text-align: center;
+    font-size: 18px;
 
 }
 
