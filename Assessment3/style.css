@@ -46,7 +46,7 @@ header img {
 header h1{
     color: #135c84;
     text-align: right;
-    font-size: 25px;
+    font-size: 35px;
     margin-bottom: 5px;
 }
 
@@ -54,18 +54,20 @@ header h2{
     margin-top: 0px;
     margin-bottom: 30px;
     text-align: right;
-    font-size: 20px;
+    font-size: 30px;
     color: darkgray;
 }
 
-header h3{
+main h3{
     margin-top: 0px;
     margin-bottom: 10px;
-    color:darkgrey;
+    font-size: 25px;
+    color:#63637d;
 }
 
 p{ 
     line-height: 1.5;
+    font-size: 18px;
 
 }
 
@@ -89,7 +91,8 @@ p{
 }
 
 footer{
-    margin-top: 50px;
+    max-width: 100%;
+    margin-top: 150px;
     text-align: right;    
 }
 
