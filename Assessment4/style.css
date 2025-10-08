@@ -118,14 +118,19 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #000;
+    background:#5d5d76;
     z-index: 1000;
     color:white;
     float: none;
 
 }
 nav a {
-    color: white;
+    color: darkgrey;
+
+}
+
+nav a.active {
+    color:#fdfbf7;
 
 }
 
@@ -133,30 +138,30 @@ header h1{
     color: #135c84;
     text-align: right;
     font-size: 30px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 header h2{
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom: 30px;
     text-align: right;
-    font-size: 20px;
+    font-size: 25px;
     color: darkgray;
 }
 
 main h3{
     margin-top: 0px;
     margin-bottom: 10px;
-    font-size: 215px;
+    font-size: 20px;
     color:#63637d;
 }
 
 p{ 
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 16px;
 }
 
- body{
+body{
     
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -188,10 +193,11 @@ footer {
 .book{
     grid-template-columns: auto auto;
     gap: 16px;
+    margin-top: 30px;
 }
 
 .book img{
-    height: 60%;
+    height: 70%;
 
 }
 
