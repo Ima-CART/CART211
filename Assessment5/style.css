@@ -1,56 +1,67 @@
-
-
-body{
-    font-family:"Roboto", sans-serif ;
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
     background-color: #f7f2eb;
 
 }
 
-a{ color: black;
+a {
+    color: black;
     text-decoration: none;
-    display: block;
     margin-bottom: 10px;
-    display: block;
     font-weight: bold;
 
 }
 
-a:hover{ color:rgb(168, 187, 149);
+a:hover {
+    color: rgb(168, 187, 149);
 
 }
 
-a.active{ color: hwb(201 9% 35%);
-          font-size: 20px;
+a.active {
+    color: #87879d;
+    font-size: 20px;
 }
 
 
-nav{ margin-left: 50px;
-     margin-top: 50px;
-     width: 30%;
-     float: left;
-
-
-}
-
-.wrapper{
-    float: right;
-    width: 60%;
+nav {
     margin-top: 50px;
-    margin-right: 50px;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+
+}
+
+.menu1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu1 a {
+    display: block;
+
+
+}
+
+.wrapper {
+    margin-top: 10px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 header img {
     width: 100%;
 }
 
-header h1{
-    color: #135c84;
-    text-align: right;
-    font-size: 35px;
-    margin-bottom: 5px;
+header h1 {
+    color: black;
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
-header h2{
+header h2 {
     margin-top: 0px;
     margin-bottom: 30px;
     text-align: right;
@@ -58,48 +69,173 @@ header h2{
     color: darkgray;
 }
 
-main h3{
+main h3 {
     margin-top: 0px;
     margin-bottom: 10px;
+    text-align: left;
     font-size: 25px;
-    color:#63637d;
+    color: #63637d;
 }
 
-p{ 
+p {
     line-height: 1.5;
     font-size: 18px;
 
 }
 
-.book{
+.book {
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+    max-width: 100%;
 }
 
-.book img{
-    width:100%;
-    height: 80%;
-    
+.book img {
+    display: block;
+    width: 80%;
+    height: auto;
 
 }
 
-.book figcaption{ 
-    font-weight: 600 ;
+.book>div {
     text-align: center;
-    font-size: 18px;
+    padding: 10px;
+}
+
+.book figure {
+    margin: 0;
+    cursor: pointer;
+}
+
+.storyimg {
+    grid-column: 1/7;
+}
+
+.story {
+    grid-column: 7/13;
+    text-align: left;
+    ;
 
 }
 
-footer{
+.story h2 {
+    text-align: left;
+    font-size: px
+}
+
+.story p {
+    text-align: left;
+    ;
+}
+
+.im1 {
+    grid-column: 1/4;
+    grid-row: 1/ 3;
+}
+
+.im2 {
+    grid-column: 4/7;
+    grid-row: 1/3;
+}
+
+.im3 {
+    grid-column: 7/16;
+    grid-row: 1/6;
+
+}
+
+.im4 {
+    grid-column: 1/4;
+    grid-row: 3/5;
+
+}
+
+.im5 {
+    grid-column: 4/7;
+    grid-row: 3/5;
+}
+
+.im6 {
+    grid-column: 1/7;
+    grid-row: 5/8;
+}
+
+.im7 {
+    grid-column: 7/10;
+    grid-row: 5/6;
+}
+
+.im8 {
+    grid-column: 10/13;
+    grid-row: 5/6;
+}
+
+.im9 {
+    grid-column: 7/10;
+    grid-row: 6/7;
+}
+
+.im10 {
+    grid-column: 10/13;
+    grid-row: 6/7;
+}
+
+.im11 {
+    grid-column: 1/4;
+    grid-row: 7/ 10;
+}
+
+.im12 {
+    grid-column: 4/7;
+    grid-row: 7/10;
+}
+
+.im13 {
+    grid-column: 7/10;
+    grid-row: 7/10;
+}
+
+.im14 {
+    grid-column: 10/13;
+    grid-row: 7/10;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.icons fa {
+    padding: 12px;
+    font-size: 3em;
+    color: gray;
+}
+
+.icons a {
+    padding: 12px;
+    font-size: 2em;
+    color: gray;
+    ;
+
+}
+
+.credit {
+    margin: auto;
+    text-align: center;
+}
+
+footer {
     max-width: 100%;
     margin-top: 150px;
-    text-align: right;    
+    text-align: right;
 }
 
 
 
 
-table img{
+table img {
     max-width: 100%;
     max-height: 100%;
 
@@ -107,105 +243,105 @@ table img{
 
 
 /* This is for Cellphone*/
-@media(max-width: 480px){
-nav{
-    margin:0 auto;
-    margin-bottom: 50px;
-    width: 100%;
-    padding: 10px 0;
-    line-height: 30px;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background:#5d5d76;
-    z-index: 1000;
-    color:white;
-    float: none;
+@media(max-width: 480px) {
+    nav {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 100%;
+        padding: 10px 0;
+        line-height: 30px;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #5d5d76;
+        z-index: 1000;
+        color: white;
+        float: none;
 
-}
-nav a {
-    color: darkgrey;
+    }
 
-}
+    nav a {
+        color: darkgrey;
 
-nav a.active {
-    color:#fdfbf7;
+    }
 
-}
+    nav a.active {
+        color: #fdfbf7;
 
-header h1{
-    color: #135c84;
-    text-align: right;
-    font-size: 30px;
-    margin-top: 40px;
-}
+    }
 
-header h2{
-    margin-top: 10px;
-    margin-bottom: 30px;
-    text-align: right;
-    font-size: 25px;
-    color: darkgray;
-}
+    header h1 {
+        color: #135c84;
+        text-align: right;
+        font-size: 30px;
+        margin-top: 40px;
+    }
 
-main h3{
-    margin-top: 0px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    color:#63637d;
-}
+    header h2 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: right;
+        font-size: 25px;
+        color: darkgray;
+    }
 
-p{ 
-    line-height: 1.5;
-    font-size: 16px;
-}
+    main h3 {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: #63637d;
+    }
 
-body{
-    
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 150;
-  font-style: normal;
-  font-variation-settings:"width" 100;
-    padding:0;
-    margin: 0;
-}
+    p {
+        line-height: 1.5;
+        font-size: 16px;
+    }
 
- 
-.wrapper{
-    margin-top:50px;
-    position: relative;
-    /* the percentage of the container. If there is no container its the percentage of the whole viewpoing*/
-    width: 90%;
-    margin: 0 auto;
-    float: none;
-    line-height: 150%;
+    body {
 
-}
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 150;
+        font-style: normal;
+        font-variation-settings: "width" 100;
+        padding: 0;
+        margin: 0;
+    }
 
-footer {
-    margin-top: 40px;
-    font-size: 12px;
-    
-}
 
-.book{
-    grid-template-columns: auto auto;
-    gap: 16px;
-    margin-top: 30px;
-}
+    .wrapper {
+        margin-top: 50px;
+        position: relative;
+        /* the percentage of the container. If there is no container its the percentage of the whole viewpoing*/
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+        line-height: 150%;
 
-.book img{
-    height: 70%;
+    }
 
-}
+    footer {
+        margin-top: 40px;
+        font-size: 12px;
 
-.book figcaption{
+    }
+
+    .book {
+        grid-template-columns: auto auto;
+        gap: 16px;
+        margin-top: 30px;
+    }
+
+    .book img {
+        height: 70%;
+
+    }
+
+    .book figcaption {
         font-weight: 500;
-        font-size:16px;
+        font-size: 16px;
+
+    }
 
 }
-
-}
-
