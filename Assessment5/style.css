@@ -55,27 +55,26 @@ header img {
 }
 
 header h1 {
-    color: black;
+    color: #000000;
     text-align: left;
     font-size: 40px;
     margin-bottom: 20px;
 }
 
-header h2 {
+/*header h2 {
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     text-align: right;
-    font-size: 30px;
+    font-size: 20px;
     color: darkgray;
-}
-
-main h3 {
+}*/
+/*main h3 {
     margin-top: 0px;
     margin-bottom: 10px;
     text-align: left;
     font-size: 25px;
     color: #63637d;
-}
+}*/
 
 p {
     line-height: 1.5;
@@ -109,6 +108,7 @@ p {
 
 .storyimg {
     grid-column: 1/7;
+    padding-top: 100px;
 }
 
 .story {
@@ -120,7 +120,8 @@ p {
 
 .story h2 {
     text-align: left;
-    font-size: px
+    font-size: 30px;
+
 }
 
 .story p {
