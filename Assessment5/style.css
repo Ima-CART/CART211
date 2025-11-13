@@ -92,14 +92,14 @@ p {
 .book img {
     display: block;
     width: 100%;
-    height: auto;
+    /*height: auto;*/
 
 }
 
-.book>div {
+/*.book>div {
     text-align: center;
     padding: 10px;
-}
+}*/
 
 .book figure {
     position: relative;
@@ -135,7 +135,7 @@ p {
     height: auto;
     aspect-ratio: 1/1;
     object-fit: cover;
-    box-sizing: boder-boxing;
+    box-sizing: border-box;
     display: block;
 }
 
@@ -193,22 +193,22 @@ p {
 
 .im11 {
     grid-column: 1/4;
-    grid-row: 9/ 11;
+    grid-row: 9/ 13;
 }
 
 .im12 {
     grid-column: 4/7;
-    grid-row: 9/11;
+    grid-row: 9/13;
 }
 
 .im13 {
     grid-column: 7/10;
-    grid-row: 9/11;
+    grid-row: 9/13;
 }
 
 .im14 {
     grid-column: 10/13;
-    grid-row: 9/11;
+    grid-row: 9/13;
 }
 
 .icons {
