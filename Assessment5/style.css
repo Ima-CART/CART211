@@ -350,7 +350,7 @@ footer {
         align-items: center;
         flex-wrap: wrap;
         border-bottom: 4px solid #000;
-        background: #5d5d76;
+        background: #000;
         z-index: 1000;
         color: white;
 

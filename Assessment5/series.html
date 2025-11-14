@@ -23,11 +23,19 @@
                         height="50px"></a>
             </div>
             <div class="menu1">
+                <button class="close-menu">&times;</button>
                 <a href="Stories.html">STORIES</a>
                 <a href="series.html" class="active">SERIES</a>
                 <a href="index.html">ABOUT</a>
             </div>
+            <div class="hamburger-menu">
+                <button>
+                    <span class="fa fa-bars"></span>
+                </button>
+            </div>
         </nav>
+
+
         <header>
             <h1> Humans of New York</h1>
         </header>
@@ -141,6 +149,23 @@
             </div>
         </footer>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerButton = document.querySelector('.hamburger-menu button');
+            const closeButton = document.querySelector('.close-menu');
+            const menu1 = document.querySelector('.menu1');
+
+            // Gestion de l'ouverture du menu
+            hamburgerButton.addEventListener('click', () => {
+                menu1.classList.add('menu-deployed');
+            });
+
+            // Gestion de la fermeture du menu
+            closeButton.addEventListener('click', () => {
+                menu1.classList.remove('menu-deployed');
+            });
+        });
+    </script>
 </body>
 
 </html>
