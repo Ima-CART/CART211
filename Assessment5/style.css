@@ -20,6 +20,7 @@ a:hover {
 a.active {
     color: #87879d;
     font-size: 20px;
+    font-weight: 900;
 }
 
 
@@ -28,6 +29,28 @@ nav {
     display: grid;
     grid-template-columns: 60% 1fr;
 
+}
+
+.hamburger-menu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hamburger-menu button {
+    background: none;
+    border: none;
+    color: gray;
+}
+
+.hamburger-menu .fa-bars {
+    cursor: pointer;
+    font-size: 2.5em;
+}
+
+.close-menu {
+    display: none;
 }
 
 .menu1 {
@@ -61,20 +84,6 @@ header h1 {
     margin-bottom: 20px;
 }
 
-/*header h2 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: right;
-    font-size: 20px;
-    color: darkgray;
-}*/
-/*main h3 {
-    margin-top: 0px;
-    margin-bottom: 10px;
-    text-align: left;
-    font-size: 25px;
-    color: #63637d;
-}*/
 
 p {
     line-height: 1.5;
@@ -90,21 +99,49 @@ p {
 }
 
 .book img {
-    display: block;
     width: 100%;
-    /*height: auto;*/
+    transition: transform 0.3s ease, opacity 0.3s ease;
 
 }
-
-/*.book>div {
-    text-align: center;
-    padding: 10px;
-}*/
 
 .book figure {
     position: relative;
     display: inline-block;
     cursor: pointer;
+}
+
+.hover-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    opacity: 0;
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    background-color: rgb(127, 127, 127);
+    padding: 8px;
+    border-radius: 10px;
+    color: #ffffff;
+    transition: opacity 0.3s ease;
+}
+
+.book figure:hover .hover-text {
+    display: block;
+    opacity: 1;
+}
+
+.book figure:hover img {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.im:hover {
+    filter: blur(2px);
+    opacity: 0.9;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+
 }
 
 .storyimg {
@@ -245,30 +282,77 @@ footer {
 
 
 
-
-/*table img {
-    max-width: 100%;
-    max-height: 100%;
-
-}*/
-
-
 /* This is for Cellphone*/
 @media(max-width: 480px) {
+
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2em;
+        color: gray;
+    }
+
+    button {
+        border-width: 0px;
+        background-color: white;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        grid-column: auto;
+    }
+
+    .menu-deployed {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        z-index: 11000;
+        padding-top: 10px;
+
+
+    }
+
+    .menu1 {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .menu1 a {
+        padding: 20px;
+        color: gray;
+    }
+
     nav {
         margin: 0 auto;
         margin-bottom: 50px;
         width: 100%;
-        padding: 10px 0;
+        padding: 10px 20;
         line-height: 30px;
         position: relative;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+        border-bottom: 4px solid #000;
         background: #5d5d76;
         z-index: 1000;
         color: white;
-        float: none;
 
     }
 
