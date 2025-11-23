@@ -1,0 +1,53 @@
+body,
+html {
+    margin: 0px;
+    height: 100%;
+    /* font-family: "Montserrat", sans-serif; */
+
+}
+
+/* .montserrat-<uniquifier> { 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}*/
+
+
+.home-img {
+    background-image: url("assets/images/vecteezy_modern-technology-background_31993297.jpg");
+    height: 100%;
+    /* width: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+}
+
+.border-text {
+    background-color: white;
+    position: absolute;
+    color: aqua;
+    top: 40%;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    opacity: .5;
+    text-align: center;
+
+}
+
+button {
+
+    position: absolute;
+    top: 68%;
+    left: 45%;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+}
