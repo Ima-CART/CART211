@@ -51,3 +51,16 @@ button {
     height: 40px;
     border-radius: 10px;
 }
+
+nav {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+
+}
