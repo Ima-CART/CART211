@@ -3,6 +3,7 @@ html {
     margin: 0px;
     height: 100%;
     /* font-family: "Montserrat", sans-serif; */
+    /* background-image: linear-gradient(to bottom right, rgb(26, 51, 68), rgb(30, 83, 142), rgb(27, 163, 183), rgb(39, 230, 236), rgb(90, 165, 205), rgb(111, 113, 161)); */
 
 }
 
@@ -52,15 +53,29 @@ button {
     border-radius: 10px;
 }
 
-nav {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 60% 1fr;
+.navbar {
+    width: 100%;
+    background-image: linear-gradient(to top left, rgb(8, 223, 217), rgb(89, 245, 246), rgb(10, 215, 242), rgb(4, 137, 180), rgb(0, 79, 104), rgb(0, 26, 43));
+    /* background-image: linear-gradient(to right, rgb(26, 51, 68), rgb(30, 83, 142), rgb(27, 163, 183), rgb(39, 230, 236), rgb(90, 165, 205), rgb(111, 113, 161)); */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+    padding-bottom: 20px;
+
 }
+
+nav {
+    margin-top: 25px;
+    display: inline-block;
+
+}
+
+
 
 a {
     color: black;
     text-decoration: none;
-
+    padding: 10px 20px;
 
 }
