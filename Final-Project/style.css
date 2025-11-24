@@ -79,3 +79,13 @@ a {
     padding: 10px 20px;
 
 }
+
+.main-img {
+    background-image: url("assets/images/vecteezy_modern-technology-background_31993297.jpg");
+    height: 100%;
+    /* width: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+}
