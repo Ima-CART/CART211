@@ -2,7 +2,7 @@ body,
 html {
     margin: 0px;
     height: 100%;
-    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Montserrat", sans-serif;
 }
 
 /* .montserrat-<uniquifier> { 
@@ -277,7 +277,7 @@ span {
 
 .dropdown {
     position: absolute;
-    top: 41px;
+    top: 60px;
     left: 10px;
     width: 100%;
     background: #aee3e9c4;
@@ -305,8 +305,9 @@ span {
 }
 
 .newsfeed-container {
-    max-width: 800px;
+    max-width: 100%;
     margin: auto;
+    background-color: #152d31;
 }
 
 .news-feed {
@@ -338,10 +339,16 @@ span {
 
 .content-feed h2 {
 
-    font-size: 24px;
+    font-size: 36px;
     color: black;
-    line-height: 1.5;
+    line-height: 1.2;
     margin-left: 10px;
+
+}
+
+.content-feed p {
+    font-size: 20px;
+
 
 }
 
@@ -352,13 +359,13 @@ span {
 }
 
 .website {
-    font-size: 12px;
+    font-size: 16px;
     color: rgb(20, 15, 15);
 }
 
-.footer-feed fa {
+.footer-feed i {
     padding: 12px;
-    font-size: 3em;
+    font-size: 2em;
     color: black;
 
 }
