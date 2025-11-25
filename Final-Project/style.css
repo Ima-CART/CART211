@@ -212,7 +212,33 @@ span {
 .fire-img h1 {
     position: absolute;
     color: white;
-    left: 30%;
-    top: 15%;
+    left: 29%;
+    top: 10%;
+    font-size: 36px;
 
+}
+
+.fire-img h3 {
+    position: absolute;
+    color: white;
+    top: 70%;
+    left: 40%;
+    font-size: 28px;
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 15px #fff, 0 0 25px #fff, 0 0 35px #00bce6, 0 0 45px #21d4fc, 0 0 55px #21d4fc, 0 0 65px #21d4fc, 0 0 75px #21d4fc;
+    }
+
+    to {
+        text-shadow: 0 0 25px #fff, 0 0 35px #51f9d8, 0 0 45px #51f9d8, 0 0 55px #51f9d8, 0 0 65px #51f9d8, 0 0 75px #51f9d8, 0 0 85px #51f9d8;
+    }
 }
