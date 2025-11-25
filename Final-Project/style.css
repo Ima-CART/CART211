@@ -245,7 +245,7 @@ span {
 
 
 .background {
-    background-image: url("assets/images/vecteezy_a-painting-of-a-forest-with-flames-and-trees_71666522.jpg");
+    background-image: url("assets/images/Searching-for-information-from-the-phone-s_11845157.jpg");
     height: 100%;
     width: 100%;
     background-position: center;
@@ -257,25 +257,30 @@ span {
 
 .search-container {
     position: absolute;
-    width: 280px;
-    bottom: 50%;
+    width: 760px;
+    top: 40%;
+    left: 24%;
 
 }
 
 .search-input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #aaa;
-    border-radius: 10px;
+    border: 1px solid #317d85;
+    border-radius: 60px;
     font-size: 16px;
     position: absolute;
+    height: 75px;
+    background-color: #468087;
+    color: white;
 }
 
 .dropdown {
     position: absolute;
     top: 41px;
+    left: 10px;
     width: 100%;
-    background: #fff;
+    background: #aee3e9c4;
     border: 1px solid #aaa;
     border-top: none;
     display: none;
@@ -285,13 +290,14 @@ span {
 .dropdown a {
     display: block;
     padding: 10px;
-    color: #333;
+    color: #1d1d1d;
     text-decoration: none;
 }
 
 .dropdown a:hover {
     background: #f2f2f2;
 }
+
 
 /* Show dropdown when input is focused */
 .search-input:focus+.dropdown {
