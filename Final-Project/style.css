@@ -252,6 +252,7 @@ span {
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 1;
+    cursor: url("assets/images/google-cursor.png"), auto;
 
 }
 
@@ -260,6 +261,17 @@ span {
     width: 760px;
     top: 40%;
     left: 24%;
+
+
+
+}
+
+.search-container i {
+    position: absolute;
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.7);
+    left: 730px;
+    top: 30px;
 
 }
 
@@ -273,6 +285,7 @@ span {
     height: 75px;
     background-color: #468087;
     color: white;
+    cursor: url("assets/images/google-cursor.png"), auto;
 }
 
 .dropdown {
@@ -308,6 +321,7 @@ span {
     max-width: 100%;
     margin: auto;
     background-color: #152d31;
+    cursor: url("assets/images/google-cursor.png"), auto;
 }
 
 .news-feed {
