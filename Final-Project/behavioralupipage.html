@@ -54,6 +54,38 @@
                 </div>
             </div>
 
+            <!-- Age -->
+            <div class="form-content">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" min="0" max="120" required>
+            </div>
+
+            <!-- Race -->
+            <div class="form-content">
+                <label for="race">Race</label>
+                <select id="race" name="race" required>
+                    <option value="">Select...</option>
+                    <option value="asian">Asian</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="native">Native American</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Interests -->
+            <div class="form-content">
+                <label>Interests</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="interest" value="sports"> Sports</label>
+                    <label><input type="checkbox" name="interest" value="Reading"> Reading</label>
+                    <label><input type="checkbox" name="interest" value="music"> Music</label>
+                    <label><input type="checkbox" name="interest" value="travel"> Travel</label>
+                    <label><input type="checkbox" name="interest" value="gaming"> Gaming</label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
 
 
 
