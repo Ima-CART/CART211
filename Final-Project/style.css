@@ -394,7 +394,7 @@ span {
 
 }
 
-.form-container {
+/* .form-container {
     max-width: 800px;
     margin-top: 50px;
     margin-left: 350px;
@@ -441,7 +441,7 @@ input::placeholder {
     color: #eee;
 }
 
-*/ select option {
+ select option {
     color: black;
 }
 
@@ -463,4 +463,4 @@ input::placeholder {
     font-size: 16px;
     border-radius: 6px;
     margin-top: 10px;
-}
+} */
