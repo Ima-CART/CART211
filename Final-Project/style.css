@@ -242,3 +242,58 @@ span {
         text-shadow: 0 0 25px #fff, 0 0 35px #51f9d8, 0 0 45px #51f9d8, 0 0 55px #51f9d8, 0 0 65px #51f9d8, 0 0 75px #51f9d8, 0 0 85px #51f9d8;
     }
 }
+
+
+.background {
+    background-image: url("assets/images/vecteezy_a-painting-of-a-forest-with-flames-and-trees_71666522.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+
+}
+
+.search-container {
+    position: absolute;
+    width: 280px;
+    bottom: 50%;
+
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    font-size: 16px;
+    position: absolute;
+}
+
+.dropdown {
+    position: absolute;
+    top: 41px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-top: none;
+    display: none;
+    z-index: 1;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background: #f2f2f2;
+}
+
+/* Show dropdown when input is focused */
+.search-input:focus+.dropdown {
+    display: block;
+}
