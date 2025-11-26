@@ -64,76 +64,86 @@ html {
 
 .navbar {
     width: 100%;
-    /* background-image: linear-gradient(to bottom left, rgb(8, 223, 217), rgb(89, 245, 246), rgb(10, 215, 242), rgb(4, 137, 180), rgb(0, 79, 104), rgb(0, 26, 43)); */
-    /* background-image: linear-gradient(to right, rgb(26, 51, 68), rgb(30, 83, 142), rgb(27, 163, 183), rgb(39, 230, 236), rgb(90, 165, 205), rgb(111, 113, 161)); */
-    /* background-image: linear-gradient(to top left, rgb(25, 24, 52), rgb(43, 44, 104), rgb(51, 138, 202), rgb(38, 183, 205), rgb(97, 189, 175)); */
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    margin-right: 50px;
+    padding-right: 50px;
     padding-bottom: 20px;
     position: absolute;
-
-
 }
 
-nav {
-    margin-top: 25px;
-    display: inline-block;
-
+nav ul.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
 }
 
+nav ul.menu li {
+    position: relative;
+}
 
-
-
-.navbar a {
+/* Links */
+nav ul.menu li a {
     color: aliceblue;
     text-decoration: none;
     padding: 10px 20px;
-    font-size: 16px;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
-
-
+    display: block;
 }
 
-.navbar a:hover {
+nav ul.menu li a:hover {
     color: black;
     background-color: rgb(255, 253, 219);
     border-radius: 10px;
 }
 
+/* Dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1b1b1b;
+    min-width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    margin-top: 5px;
+    padding: 0;
+    z-index: 10;
+}
+
+.dropdown-content li a {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.dropdown-content li a:hover {
+    background-color: rgb(255, 253, 219);
+    color: black;
+    border-radius: 6px;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 .main-img {
     background-image: url("assets/images/Google-on-the-screen.jpg");
-    height: 100%;
+    height: 900px;
     /* width: 100%; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* .main-img h1 {
-    color: white;
-    top: 10%;
-    position: absolute;
-    left: 43%;
-    font-size: 40px;
-    font-weight: 400;
-}
-
-.main-img p {
-    position: absolute;
-    top: 93%;
-    color: #d7ecff;
-    font-size: 20px;
-    opacity: .8;
-} */
 
 .main-tog {
     /* display: none; */
     position: relative;
-    top: 70%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -143,6 +153,26 @@ nav {
     border-radius: 10px;
     text-align: center;
     font-size: 20px;
+    font-weight: 600;
+    white-space: pre-wrap;
+
+
+
+}
+
+.head-text {
+    /* display: none; */
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 80%;
+    max-width: 650px;
+    padding: 0px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
     white-space: pre-wrap;
 
 
@@ -171,7 +201,7 @@ nav {
 }
 
 #tog:checked~.main-text,
-.main-text button {
+.head-text {
     display: block;
 }
 
@@ -191,52 +221,6 @@ nav {
     animation-delay: 19s;
 }
 
-/*.shine-box {
-    width: 100%;
-    height: 100%;
-    background-image: url("assets/images/Google-on-the-screen.jpg");
-    /* Dark background to make the light visible *
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    /* Needed for absolute positioning of the shine effect *
-overflow: hidden;
-/* Keeps the shine inside the box *
-    border-radius: 10px;
-}
-
-.shine-box::before {
-    content: '';
-    position: absolute;
-    top: -100%;
-    /* Start position above the container *
-    left: 0;
-    width: 100%;
-    height: 200%;
-    /* Height covers the full travel path *
-    background: linear-gradient(to bottom,
-            rgba(255, 255, 255, 0) 0%,
-            rgba(255, 255, 255, 0.3) 50%,
-            /* The "light" part *
-            rgba(255, 255, 255, 0) 100%);
-    animation: shine-down 3s infinite linear;
-    /* Animation properties *
-}
-
-@keyframes shine-down {
-    0% {
-        transform: translateY(0);
-        /* Start at the top *
-    }
-
-
-    100% {
-        transform: translateY(100%);
-        /* Move to the bottom *
-    }
-}*/
 
 .fire-img {
     background-image: url("assets/images/vecteezy_cityscape-under-fiery-cloud-network-technology-and-connection_69348392.jpg");
