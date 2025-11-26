@@ -748,7 +748,52 @@ span {
 
 }
 
+.invention-bg {
+    background-image: url("assets/images/vecteezy_abstract-digital-blue-square-particles-background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.im-google img {
+    position: absolute;
+    height: 30%;
+    top: 15%;
+    left: 35%;
+}
+
+.hand-im img {
+    position: absolute;
+    height: 45%;
+    top: 25%;
+    left: 55%;
+    opacity: .3;
+}
+
+.folder-im img {
+    position: absolute;
+    width: 55%;
+    top: 63.5%;
+    left: 25%;
+    opacity: .3;
+}
+
+.eye-left img {
+    position: absolute;
+    height: 30%;
+    top: 20%;
+    left: 10%;
+    opacity: .5;
+}
+
+.eye-right img {
+    position: absolute;
+    height: 30%;
+    top: 20%;
+    left: 75%;
+    opacity: .5;
+}
 
 /* .form-container {
     max-width: 800px;
