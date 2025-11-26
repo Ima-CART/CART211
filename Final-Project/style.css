@@ -75,7 +75,7 @@ nav {
 
 
 
-a {
+.navbar a {
     color: aliceblue;
     text-decoration: none;
     padding: 10px 20px;
@@ -87,7 +87,7 @@ a {
 
 }
 
-a:hover {
+.navbar a:hover {
     color: black;
     background-color: rgb(255, 253, 219);
     border-radius: 10px;
@@ -392,6 +392,66 @@ span {
     background-size: cover;
     cursor: url("assets/images/google-cursor.png"), auto;
 
+}
+
+
+.ad {
+    width: 260px;
+    background: white;
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.18);
+    position: absolute;
+    text-align: center;
+}
+
+.ad img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.ad-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.ads-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: dodgerblue;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+#ad1 {
+    top: 30%;
+    left: 1%;
+}
+
+#ad2 {
+    top: 20%;
+    right: 21%;
+}
+
+#ad3 {
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#ad4 {
+    top: 30%;
+    right: 1%;
+}
+
+#ad5 {
+    top: 10%;
+    left: 21%;
 }
 
 /* .form-container {
