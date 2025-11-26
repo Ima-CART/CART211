@@ -394,6 +394,12 @@ span {
 
 }
 
+.as-bg {
+    background: linear-gradient(135deg, #002164, #003399, #3c8aff);
+    background-size: cover;
+    cursor: url("assets/images/google-cursor.png"), auto;
+
+}
 
 .ad {
     width: 260px;
@@ -434,7 +440,7 @@ span {
 }
 
 #ad2 {
-    top: 20%;
+    top: 10%;
     right: 21%;
 }
 
@@ -445,7 +451,7 @@ span {
 }
 
 #ad4 {
-    top: 30%;
+    top: 25%;
     right: 1%;
 }
 
