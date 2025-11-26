@@ -795,6 +795,65 @@ span {
     opacity: .5;
 }
 
+#tooglebox {
+    display: none;
+}
+
+input {
+    display: none;
+}
+
+label img {
+    position: absolute;
+    height: 30%;
+    left: 60%;
+    margin: 15px;
+    top: 40%;
+
+}
+
+.textbox {
+    position: fixed;
+    top: 15%;
+    left: 60%;
+    width: 280px;
+    padding: 10px;
+    border: 2px, solid black;
+    border-radius: 10px;
+    display: none;
+    animation: fadeIn 0.25s, ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0, 9);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+}
+
+label.close-bt {
+    display: inline-block;
+    margin-top: 0;
+    padding: 6px;
+    background: royalblue;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+
+}
+
+#toggleBox:checked~.textbox {
+    display: block;
+
+
+}
+
 /* .form-container {
     max-width: 800px;
     margin-top: 50px;
