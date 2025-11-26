@@ -11,7 +11,8 @@ html {
     font-weight: <weight>;
     font-style: normal;
 }*/
-
+/* Home Page
+    There is no name bar */
 
 .home-img {
     background-image: url("assets/images/vecteezy_modern-technology-background_31993297.jpg");
@@ -61,74 +62,82 @@ html {
 }
 
 
-
+/* Enter Google Page (Page 1) */
 .navbar {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding-right: 50px;
+    align-items: center;
+    margin-right: 5px;
     padding-bottom: 20px;
     position: absolute;
 }
 
-nav ul.menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 10px;
+nav {
+    margin-top: 25px;
+    display: inline-block;
 }
 
-nav ul.menu li {
-    position: relative;
-}
-
-/* Links */
-nav ul.menu li a {
+/* Your link style */
+.navbar a {
     color: aliceblue;
     text-decoration: none;
     padding: 10px 20px;
+    font-size: 16px;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
-    display: block;
+
 }
 
-nav ul.menu li a:hover {
+.navbar a:hover {
     color: black;
     background-color: rgb(255, 253, 219);
     border-radius: 10px;
 }
 
-/* Dropdown menu */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #1b1b1b;
-    min-width: 180px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    margin-top: 5px;
-    padding: 0;
-    z-index: 10;
+/* Dropdown container */
+.dropdown1 {
+    position: relative;
+    display: inline-block;
 }
 
-.dropdown-content li a {
+/* Dropdown menu box */
+.dropdown1-content {
+    display: none;
+    position: absolute;
+    background-color: #7fa3f752;
+    top: 31px;
+    min-width: 180px;
+
+
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+.dropdown1-content a {
+    display: block;
     padding: 10px 20px;
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
 }
 
-.dropdown-content li a:hover {
+
+.dropdown1-content a:hover {
     background-color: rgb(255, 253, 219);
     color: black;
     border-radius: 6px;
 }
 
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-content {
+
+.dropdown1:hover .dropdown1-content {
     display: block;
 }
-
 
 .main-img {
     background-image: url("assets/images/Google-on-the-screen.jpg");
@@ -221,6 +230,7 @@ nav ul.menu li a:hover {
     animation-delay: 19s;
 }
 
+/* Searching for Capitalism page (Page 3) */
 
 .fire-img {
     background-image: url("assets/images/vecteezy_cityscape-under-fiery-cloud-network-technology-and-connection_69348392.jpg");
@@ -243,9 +253,9 @@ nav ul.menu li a:hover {
 
 .money-bags img {
     position: absolute;
-    height: 25%;
-    width: 25%;
-    top: 75%;
+    height: 30%;
+    width: 30%;
+    top: 70%;
 
 }
 
@@ -254,14 +264,14 @@ nav ul.menu li a:hover {
     height: 25%;
     width: 25%;
     top: 75%;
-    left: 75%;
+    left: 73%;
 }
 
 span {
     color: white;
     font-size: 80px;
     position: absolute;
-    left: 45%;
+    left: 50%;
     top: 75%;
     cursor: pointer;
 }
@@ -279,10 +289,11 @@ span {
     position: absolute;
     color: white;
     top: 70%;
-    left: 39%;
+    left: 40%;
     font-size: 28px;
 }
 
+/* Text glow */
 .glow {
     font-size: 80px;
     color: #fff;
@@ -290,6 +301,7 @@ span {
     animation: glow 1s ease-in-out infinite alternate;
 }
 
+/* Animation for the text glow */
 @-webkit-keyframes glow {
     from {
         text-shadow: 0 0 15px #fff, 0 0 25px #fff, 0 0 35px #00bce6, 0 0 45px #21d4fc, 0 0 55px #21d4fc, 0 0 65px #21d4fc, 0 0 75px #21d4fc;
@@ -300,7 +312,105 @@ span {
     }
 }
 
+.moneytext {
+    position: fixed;
+    top: 31%;
+    left: 5%;
+    width: 280px;
+    padding: 15px;
+    border: 2px, solid black;
+    border-radius: 10px;
+    display: none;
+    animation: fadeIn 0.25s, ease-in-out;
+    line-height: 1.3;
+    background-color: #3b9eb7ca;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
 
+
+.cashtext {
+    position: fixed;
+    top: 15%;
+    left: 75%;
+    width: 280px;
+    padding: 15px;
+    border: 2px, solid black;
+    border-radius: 10px;
+    display: none;
+    animation: fadeIn 0.25s, ease-in-out;
+    color: white;
+    line-height: 1.3;
+    font-size: 18px;
+    background-color: #3b9eb7ca;
+}
+
+.fire-img input {
+    display: none;
+}
+
+/* Adding animation for when the money bag is clicked */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0, 9);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+}
+
+label.close-moneybtn {
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    background: royalblue;
+    color: white;
+    border-radius: 14px;
+    font-size: 18px;
+
+
+}
+
+label.close-cashbtn {
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    background: royalblue;
+    color: white;
+    border-radius: 14px;
+    font-size: 18px;
+
+
+}
+
+
+
+/* also the toggle box to appear when moneybag is clicked */
+#money-Box:checked~.moneytext {
+    display: block;
+
+
+}
+
+#cashBox:checked~.cashtext {
+    display: block;
+
+
+}
+
+
+/*  */
 .background {
     background-image: url("assets/images/Searching-for-information-from-the-phone-s_11845157.jpg");
     height: 100%;
@@ -345,7 +455,7 @@ span {
     cursor: url("assets/images/google-cursor.png"), auto;
 }
 
-.dropdown {
+.dropdown-bar {
     position: absolute;
     top: 60px;
     left: 10px;
@@ -357,20 +467,20 @@ span {
     z-index: 1;
 }
 
-.dropdown a {
+.dropdown-bar a {
     display: block;
     padding: 10px;
     color: #1d1d1d;
     text-decoration: none;
 }
 
-.dropdown a:hover {
+.dropdown-bar a:hover {
     background: #f2f2f2;
 }
 
 
 /* Show dropdown when input is focused */
-.search-input:focus+.dropdown {
+.search-input:focus+.dropdown-bar {
     display: block;
 }
 
@@ -804,6 +914,8 @@ span {
 
 }
 
+
+/* Human invention page (Page 8) */
 .invention-bg {
     background-image: url("assets/images/vecteezy_abstract-digital-blue-square-particles-background.jpg");
     height: 100%;
@@ -831,7 +943,7 @@ span {
     position: absolute;
     width: 55%;
     top: 63.5%;
-    left: 25%;
+    left: 22%;
     opacity: .3;
 }
 
@@ -851,7 +963,7 @@ span {
     opacity: .5;
 }
 
-
+/* Extraction Page (Page 9) */
 
 .extract-bg {
     background-image: url("assets/images/vecteezy_data-security-system-protection-computer-security.jpg");
@@ -864,13 +976,10 @@ span {
 
 
 
-#tooglebox {
+#togglebox {
     display: none;
 }
 
-input {
-    display: none;
-}
 
 .boxtoggle img {
     position: absolute;
@@ -881,6 +990,12 @@ input {
 
 }
 
+.extract-bg input {
+    display: none;
+}
+
+/* Text that is hidden in the folder. 
+The text is only revealed when the folder is clicked */
 .textbox {
     position: fixed;
     top: 15%;
@@ -894,6 +1009,7 @@ input {
     background-color: rgba(255, 255, 255, 0.764);
 }
 
+/* animation for toogle box */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -919,6 +1035,7 @@ label.close-bt {
 
 }
 
+/* also the toggle box to appear when the folder is clicked */
 #toggleBox:checked~.textbox {
     display: block;
 
@@ -945,7 +1062,7 @@ label.close-bt {
 }
 
 
-
+/* The Final page. Google has attain Capitalism */
 .final-bg {
     background-image: url("assets/images/vecteezy_abstract-blue-circuit-digital-background_6736873\ copy.jpg");
     height: 1050px;
@@ -955,6 +1072,9 @@ label.close-bt {
 
 }
 
+.final-bg input {
+    display: none;
+}
 
 .typetoggle img {
     position: absolute;
@@ -986,14 +1106,18 @@ label.close-bt {
 
 .toggle-text button {
     display: none;
-    top: 90%;
+    top: 88%;
     left: 40%;
     position: fixed;
     color: white;
-    background-color: rgb(33, 127, 235);
-    max-width: 100px;
+    background-color: dodgerblue;
+    width: 120px;
+    font-size: 16px;
+    font-weight: 500;
     padding: 10px;
     border-radius: 10px;
+    border: none;
+    cursor: pointer;
 
 
 }
