@@ -795,6 +795,19 @@ span {
     opacity: .5;
 }
 
+
+
+.extract-bg {
+    background-image: url("assets/images/vecteezy_data-security-system-protection-computer-security.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: url("assets/images/google-cursor2.png"), auto;
+}
+
+
+
 #tooglebox {
     display: none;
 }
@@ -806,22 +819,23 @@ input {
 label img {
     position: absolute;
     height: 30%;
-    left: 60%;
+    left: 70%;
     margin: 15px;
-    top: 40%;
+    top: 45%;
 
 }
 
 .textbox {
     position: fixed;
     top: 15%;
-    left: 60%;
+    left: 70%;
     width: 280px;
     padding: 10px;
     border: 2px, solid black;
     border-radius: 10px;
     display: none;
     animation: fadeIn 0.25s, ease-in-out;
+    background-color: rgba(255, 255, 255, 0.764);
 }
 
 @keyframes fadeIn {
@@ -846,11 +860,31 @@ label.close-bt {
     border-radius: 10px;
     font-size: 16px;
 
+
 }
 
 #toggleBox:checked~.textbox {
     display: block;
 
+
+}
+
+.locked-google img {
+    position: absolute;
+    top: 50%;
+    height: 25%;
+    left: 5%;
+    cursor: url("assets/images/google-cursor2.png"), auto;
+
+}
+
+.lock img {
+    position: absolute;
+    top: 30%;
+    height: 50%;
+    left: 7%;
+    opacity: .4;
+    cursor: url("assets/images/google-cursor2.png"), auto;
 
 }
 
