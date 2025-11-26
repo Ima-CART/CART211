@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,687;1,687&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/190f2555f1.js" crossorigin="anonymous"></script>
     <title>Surplus At Scale</title>
 </head>
 
@@ -23,19 +24,58 @@
         </nav>
 
     </div>
-    <div class="value" id="dollarvalue">$0</div>
+
+    <div class="surplus-bg"></div>
+
+
+    <div class="value" id="dollarValue">$0</div>
 
     <div class="vacation">
         <img src="assets/images/vacation-unsplash.jpg">
-        <div class="vacation">Travel Offers</div>
+        <div class="vacation-title">Travel Offers</div>
         <p>Save $300 on your next vacation!</p>
         <a href="#" class="ads-btn" onclick="increaseValue()">Book Now</a>
     </div>
 
+    <div class="subscribe-ig">
+        <img src="assets/images/vecteezy_subscribe-button-red-color-vector-illustration.png" href="#"
+            onclick="increaseValue()">
+    </div>
+
+    <div class="google-ig">
+        <img src="assets/images/google-1015751_1280(1).png" href="#" onclick="increaseValue()">
+    </div>
 
 
+    <div class="search-container" onclick="increaseValue()">
+        <input type="text" class="search-input" placeholder="Search...">
+        <div class="dropdown" onclick="increaseValue()">
+            <a href="#">Premier League</a>
+            <a href="#">Social Media</a>
+            <a href="#">Amazon</a>
+            <a href="#">Skysports</a>
+            <a href="#">Graphic Design</a>
+            <a href="#">Concordia</a>
+        </div>
+        <i class="fa-solid fa-magnifying-glass" onclick="increaseValue()"></i>
+
+    </div>
+
+    <a href="#" class="fa fa-facebook" onclick="increaseValue()"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-pinterest"></a>
+    <a href="#" class="fa fa-snapchat-ghost"></a>
 
 
+    <script>
+        let dollarValue = 0;
+
+        function increaseValue() {
+            dollarValue += 10;
+            document.getElementById('dollarValue').textContent = `$${dollarValue}`;
+        }
+    </script>
 </body>
 
 </html>
