@@ -1,6 +1,6 @@
 body,
 html {
-    margin: 0px;
+    margin: 0;
     height: 100%;
     font-family: "Montserrat", sans-serif;
 }
@@ -11,8 +11,8 @@ html {
     font-weight: <weight>;
     font-style: normal;
 }*/
-/* Home Page
-    There is no name bar */
+/* Home Page (Page 1)
+    There is no navigation  bar */
 
 .home-img {
     background-image: url("assets/images/vecteezy_modern-technology-background_31993297.jpg");
@@ -62,7 +62,9 @@ html {
 }
 
 
-/* Enter Google Page (Page 1) */
+/* Enter Google Page (Page 2) */
+
+/* Navigation bar */
 .navbar {
     width: 100%;
     display: flex;
@@ -78,7 +80,7 @@ nav {
     display: inline-block;
 }
 
-/* Your link style */
+
 .navbar a {
     color: aliceblue;
     text-decoration: none;
@@ -90,19 +92,26 @@ nav {
 
 }
 
+.navbar a.active {
+    color: black;
+    background-color: #fffddb;
+    border-radius: 10px;
+    opacity: .7;
+}
+
 .navbar a:hover {
     color: black;
-    background-color: rgb(255, 253, 219);
+    background-color: #fffddb;
     border-radius: 10px;
 }
 
-/* Dropdown container */
+/* Dropdown in navigation */
 .dropdown1 {
     position: relative;
     display: inline-block;
 }
 
-/* Dropdown menu box */
+/* Dropdown menu box in navigation */
 .dropdown1-content {
     display: none;
     position: absolute;
@@ -129,7 +138,7 @@ nav {
 
 
 .dropdown1-content a:hover {
-    background-color: rgb(255, 253, 219);
+    background-color: #fffddb;
     color: black;
     border-radius: 6px;
 }
@@ -139,6 +148,30 @@ nav {
     display: block;
 }
 
+.home-icon {
+    position: absolute;
+    top: 20px;
+    /* Adjust the distance from the top */
+    left: 20px;
+    /* Adjust the distance from the left */
+    color: aliceblue;
+    font-size: 24px;
+    /* Size of the home icon */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.home-icon:hover {
+    color: #fffddb;
+    /* Lighter color on hover */
+}
+
+.home-icon i {
+    font-size: 30px;
+    /* Icon size */
+}
+
+/* The main image of the enter google page  */
 .main-img {
     background-image: url("assets/images/Google-on-the-screen.jpg");
     height: 900px;
@@ -167,6 +200,10 @@ nav {
 
 
 
+}
+
+.main-img input {
+    display: none;
 }
 
 .head-text {
@@ -230,15 +267,23 @@ nav {
     animation-delay: 19s;
 }
 
+.google-arrow span {
+    position: absolute;
+    font-size: 110px;
+    top: 104%;
+    left: 46%;
+    cursor: url('assets/images/google-cursor.png'), auto;
+}
+
 /* Searching for Capitalism page (Page 3) */
 
 .fire-img {
     background-image: url("assets/images/vecteezy_cityscape-under-fiery-cloud-network-technology-and-connection_69348392.jpg");
     height: 100%;
-    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
     cursor: url("assets/images/google-cursor.png"), auto;
 
 }
@@ -251,12 +296,17 @@ nav {
     opacity: .5;
 }
 
+
 .money-bags img {
     position: absolute;
     height: 30%;
     width: 30%;
     top: 70%;
 
+}
+
+.fire-img input[type="checkbox"] {
+    display: none;
 }
 
 .money-stacks img {
@@ -346,9 +396,6 @@ span {
     background-color: #3b9eb7ca;
 }
 
-.fire-img input {
-    display: none;
-}
 
 /* Adding animation for when the money bag is clicked */
 @keyframes fadeIn {
@@ -410,17 +457,30 @@ label.close-cashbtn {
 }
 
 
-/*  */
-.background {
+/* Balance Power page (page 4) */
+.background-feed {
     background-image: url("assets/images/Searching-for-information-from-the-phone-s_11845157.jpg");
     height: 100%;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
     opacity: 1;
     cursor: url("assets/images/google-cursor.png"), auto;
 
+}
+
+.background-feed p {
+    position: absolute;
+    color: white;
+    width: 800px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 600;
+    top: 24%;
+    left: 25%;
 }
 
 .search-container {
@@ -453,6 +513,13 @@ label.close-cashbtn {
     background-color: #468087;
     color: white;
     cursor: url("assets/images/google-cursor.png"), auto;
+}
+
+.background-feed span {
+    position: absolute;
+    top: 49%;
+    left: 45%;
+    font-size: 100px;
 }
 
 .dropdown-bar {
@@ -551,19 +618,104 @@ label.close-cashbtn {
 
 }
 
-
+/* Behavioral UPI page (Page 5) */
 .bgcolor {
-
-    background: linear-gradient(135deg, #001a4d, #003399, #458efc);
+    background-image: url("assets/images/vecteezy-technology-digital-world-information.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    cursor: url("assets/images/google-cursor.png"), auto;
+    cursor: url("assets/images/google-cursor2.png"), auto;
+
+}
+
+.form-container {
+    width: 800px;
+    margin-top: 100px;
+    margin-left: 300px;
+    padding: 50px;
+    background: #00437eca;
+    border-radius: 12px;
+    border: 1px solid #ffffff33;
+    position: absolute;
+
+
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+.form-content {
+
+    max-height: 200px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: white;
+}
+
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.form-container input::placeholder {
+    color: #eee;
+}
+
+select option {
+    color: black;
+}
+
+
+.checkbox-group label,
+.radio-group label {
+    display: inline-block;
+    margin-right: 12px;
+    font-weight: normal;
+}
+
+
+/* Advertisment Page (Page 6)*/
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffffff;
+    color: #002080;
+    border: none;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
 
 }
 
 .as-bg {
-    background: linear-gradient(135deg, #002164, #003399, #3c8aff);
+    background-image: url("assets/images/vecteezy_digital-building-in-matrix-style-abstract-background.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    cursor: url("assets/images/google-cursor.png"), auto;
+    cursor: url("assets/images/google-cursor2.png"), auto;
 
 }
 
@@ -606,8 +758,8 @@ label.close-cashbtn {
 }
 
 #ad2 {
-    top: 10%;
-    right: 21%;
+    top: 15%;
+    right: 20.5%;
 }
 
 #ad3 {
@@ -622,21 +774,23 @@ label.close-cashbtn {
 }
 
 #ad5 {
-    top: 10%;
-    left: 21%;
+    top: 15%;
+    left: 20.8%;
 }
 
 /* Animation Ads */
 
-@keyframes fadeIn {
+@keyframes fadeInRotate {
     from {
         opacity: 0;
-        transform: scale(0.8);
+        transform: rotate(-10deg);
+
     }
 
     to {
         opacity: 1;
-        transform: scale(1);
+        transform: rotate(0deg);
+
     }
 }
 
@@ -693,8 +847,9 @@ label.close-cashbtn {
 }
 
 /* Apply animation to the ads */
+
 #ad1 {
-    animation: fadeIn 1s ease-out forwards;
+    animation: fadeInRotate 1s ease-out forwards;
 }
 
 #ad2 {
@@ -713,6 +868,26 @@ label.close-cashbtn {
     animation: zoomIn 1.2s ease-out forwards;
 }
 
+.a-text {
+    position: absolute;
+    width: 250px;
+    color: white;
+    margin-top: 455px;
+    margin-left: 330px;
+    font-size: 18px;
+}
+
+.a2-text {
+    position: absolute;
+    width: 250px;
+    color: white;
+    margin-top: 440px;
+    margin-left: 920px;
+    font-size: 18px;
+}
+
+/* Surplus Scale page (Page 7) */
+
 .value {
     position: absolute;
     top: 3%;
@@ -729,7 +904,27 @@ label.close-cashbtn {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+    ;
 
+}
+
+.surplus-bg p {
+    position: absolute;
+    top: 84%;
+    left: 24%;
+    color: white;
+    width: 800px;
+    font-size: 21px;
+    font-weight: 700;
+
+}
+
+.surplus-bg span {
+    position: absolute;
+    top: 49%;
+    left: 45%;
+    font-size: 100px;
 }
 
 .searchbar-container {
@@ -840,7 +1035,7 @@ label.close-cashbtn {
 .subscribe-ig img {
     position: absolute;
     top: 65%;
-    left: 40%;
+    left: 41%;
     height: 10%;
     cursor: pointer;
     opacity: 0.8;
@@ -924,6 +1119,24 @@ label.close-cashbtn {
     background-size: cover;
 }
 
+.invention-bg p {
+    color: white;
+    font-size: 22px;
+    width: 800px;
+    font-weight: 600;
+    position: absolute;
+    top: 52%;
+    left: 25%;
+    line-height: 1.5;
+}
+
+.invention-bg span {
+    position: absolute;
+    top: 32%;
+    left: 44%;
+    font-size: 130px;
+}
+
 .im-google img {
     position: absolute;
     height: 30%;
@@ -971,6 +1184,7 @@ label.close-cashbtn {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
     cursor: url("assets/images/google-cursor2.png"), auto;
 }
 
@@ -987,6 +1201,7 @@ label.close-cashbtn {
     left: 70%;
     margin: 15px;
     top: 45%;
+    cursor: pointer;
 
 }
 
@@ -1026,10 +1241,11 @@ The text is only revealed when the folder is clicked */
 label.close-bt {
     display: inline-block;
     margin-top: 0;
-    padding: 6px;
-    background: royalblue;
+    margin-left: 100px;
+    padding: 12px;
+    background: rgb(25, 129, 233);
     color: white;
-    border-radius: 10px;
+    border-radius: 12px;
     font-size: 16px;
 
 
@@ -1047,7 +1263,7 @@ label.close-bt {
     top: 50%;
     height: 25%;
     left: 5%;
-    cursor: url("assets/images/google-cursor2.png"), auto;
+    cursor: url("assets/images/google-cursor.png"), auto;
 
 }
 
@@ -1057,18 +1273,22 @@ label.close-bt {
     height: 50%;
     left: 7%;
     opacity: .4;
-    cursor: url("assets/images/google-cursor2.png"), auto;
+    cursor: url("assets/images/google-cursor.png"), auto;
 
 }
 
 
-/* The Final page. Google has attain Capitalism */
+/* The Final page. Google has attain Capitalism 
+It will be a hidden page that will not be apart of the navbar
+You can only get throught it by the lock on google extraction page
+*/
 .final-bg {
     background-image: url("assets/images/vecteezy_abstract-blue-circuit-digital-background_6736873\ copy.jpg");
     height: 1050px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 
 }
 
