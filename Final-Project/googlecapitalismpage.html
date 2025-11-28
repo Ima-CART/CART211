@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="responsivestyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,11 +19,21 @@
 
 <body>
     <div class="navbar">
-        <a href="homepage.html" class="home-icon"><i class="fas fa-home"></i>
-        </a>
-        <nav>
+        <a href="homepage.html" class="home-icon"><i class="fas fa-home"></i></a>
+
+        <!-- Hamburger button -->
+        <div class="hamburger" id="hamburgerBtn" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Close button (hidden by default) -->
+        <div class="close-btn" id="closeBtn" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <nav id="nav-links">
             <a href="entergooglepage.html">Enter Google</a>
-            <a href="capitalismpage.html">Capitalism</a>
+            <a href="capitalismpage.html" class="active">Capitalism</a>
             <a href="balancepowerpage.html">Power</a>
 
             <!-- Behavior Surplus dropdown -->
@@ -34,8 +46,8 @@
                 </div>
             </div>
 
-            <!--Information dropdown-->
-            <div class="dropdown1" id="info">
+            <!-- Information dropdown -->
+            <div class="dropdown1">
                 <a href="#">Information ▾</a>
                 <div class="dropdown1-content">
                     <a href="humanivention.html">Human Invention</a>
@@ -89,6 +101,29 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        // Grab elements
+        const hamburgerBtn = document.getElementById("hamburgerBtn");
+        const closeBtn = document.getElementById("closeBtn");
+        const navMenu = document.getElementById("nav-links");
+
+        // Open menu
+        hamburgerBtn.addEventListener("click", function () {
+            navMenu.classList.add("active");
+            hamburgerBtn.style.display = "none";
+            closeBtn.style.display = "block";
+        });
+
+        // Close menu
+        closeBtn.addEventListener("click", function () {
+            navMenu.classList.remove("active");
+            hamburgerBtn.style.display = "block";
+            closeBtn.style.display = "none";
+        });
+
+
+    </script>
 </body>
 
 </html>

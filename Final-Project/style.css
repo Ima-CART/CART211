@@ -62,10 +62,118 @@ html {
 }
 
 
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+}
+
+/* Home icon */
+.home-icon {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    font-size: 24px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.home-icon :hover {
+    color: #000000;
+}
+
+.home-icon i {
+    font-size: 28px;
+}
+
+/* Links */
+nav {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.navbar a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 8px 18px;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.navbar a.active {
+    color: black;
+    background-color: #fffddb;
+    border-radius: 10px;
+    opacity: .7;
+}
+
+.navbar a:hover {
+    background-color: #fffddb;
+    color: black;
+    border-radius: 10px;
+}
+
+/* Dropdown */
+.dropdown1 {
+    position: relative;
+}
+
+.dropdown1-content {
+    display: none;
+    position: absolute;
+    background-color: #7fa3f752;
+    top: 31px;
+    min-width: 180px;
+    border-radius: 10px;
+    padding: 5px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown1-content a {
+    display: block;
+    padding: 10px 20px;
+}
+
+.dropdown1-content a:hover {
+    background-color: #fffddb;
+    color: black;
+}
+
+.dropdown1:focus-within .dropdown1-content {
+    display: block;
+}
+
+/* ==========================================
+   HAMBURGER FOR MOBILE
+   ========================================== */
+.hamburger,
+.close-btn {
+    display: none;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    z-index: 1001;
+}
+
+#closeBtn {
+    display: none;
+
+}
+
 /* Enter Google Page (Page 2) */
 
 /* Navigation bar */
-.navbar {
+/* .navbar {
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -103,16 +211,16 @@ nav {
     color: black;
     background-color: #fffddb;
     border-radius: 10px;
-}
+} */
 
 /* Dropdown in navigation */
-.dropdown1 {
+/* .dropdown1 {
     position: relative;
     display: inline-block;
-}
+} */
 
 /* Dropdown menu box in navigation */
-.dropdown1-content {
+/* .dropdown1-content {
     display: none;
     position: absolute;
     background-color: #7fa3f752;
@@ -151,25 +259,46 @@ nav {
 .home-icon {
     position: absolute;
     top: 20px;
-    /* Adjust the distance from the top */
     left: 20px;
-    /* Adjust the distance from the left */
     color: aliceblue;
     font-size: 24px;
-    /* Size of the home icon */
     text-decoration: none;
     cursor: pointer;
 }
 
 .home-icon:hover {
     color: #fffddb;
-    /* Lighter color on hover */
+} */
+
+/* Icon size */
+/* .home-icon i {
+    font-size: 30px;
+} */
+
+/* Hamburger menu for responsive webpage */
+/* .hamburger-menu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.home-icon i {
-    font-size: 30px;
-    /* Icon size */
+.hamburger-menu button {
+    background: none;
+    border: none;
+    color: rgb(255, 239, 239);
 }
+
+.hamburger-menu button .fa-bars {
+    cursor: pointer;
+    font-size: 2.5em;
+    padding-right: 15px;
+}
+
+.close-menu {
+    display: none;
+} */
+
 
 /* The main image of the enter google page  */
 .main-img {
@@ -179,6 +308,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 
@@ -267,13 +397,21 @@ nav {
     animation-delay: 19s;
 }
 
-.google-arrow span {
+
+
+
+.google-arrow {
+
     position: absolute;
-    font-size: 110px;
-    top: 104%;
-    left: 46%;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    font-size: 60px;
+    color: white;
     cursor: url('assets/images/google-cursor.png'), auto;
 }
+
 
 /* Searching for Capitalism page (Page 3) */
 
@@ -290,9 +428,9 @@ nav {
 
 .fire-img img {
     position: absolute;
-    width: 100%;
-    height: 65%;
     top: 35%;
+    height: 65%;
+    width: 100%;
     opacity: .5;
 }
 
@@ -317,6 +455,9 @@ nav {
     left: 73%;
 }
 
+
+
+/* The white arrow pointing next */
 span {
     color: white;
     font-size: 80px;
@@ -330,7 +471,7 @@ span {
     position: absolute;
     color: white;
     left: 29%;
-    top: 10%;
+    top: 15%;
     font-size: 36px;
 
 }
@@ -338,7 +479,7 @@ span {
 .fire-img h3 {
     position: absolute;
     color: white;
-    top: 70%;
+    top: 65%;
     left: 40%;
     font-size: 28px;
 }
@@ -1294,6 +1435,7 @@ You can only get throught it by the lock on google extraction page
 
 .final-bg input {
     display: none;
+    opacity: 0;
 }
 
 .typetoggle img {
