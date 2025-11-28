@@ -488,13 +488,12 @@ html {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        cursor: url("assets/images/google-cursor2.png"), auto;
 
     }
 
     /* Make the form container width 80% of the screen */
     .form-container {
-        top: 10%;
+        top: 2%;
         width: 80%;
         margin-left: 3%;
         padding: 25px;
