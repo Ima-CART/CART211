@@ -306,7 +306,7 @@ html {
     label.close-moneybtn {
         display: inline-block;
         margin-left: 10px;
-        margin-top: 10px;
+        margin-top: -15px;
         width: 25%;
         padding: 10px;
         text-align: center;
