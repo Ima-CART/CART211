@@ -436,6 +436,48 @@ html {
         background: #f2f2f2;
     }
 
+    .news-feed {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+
+    }
+
+    /* Adjust image feed to take full width */
+    .image-feed {
+        grid-column: 1 / 2;
+        border-radius: 12px 12px 0 0;
+
+    }
+
+    /* Adjust content section */
+    .content-feed {
+        grid-column: 1 / 2;
+        padding: 10px;
+
+    }
+
+    .content-feed h2 {
+        font-size: 20px;
+    }
+
+    .content-feed p {
+        font-size: 14px;
+
+    }
+
+    .footer-feed {
+        font-size: 14px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-feed i {
+        font-size: 1.2em;
+    }
+
+
+
+
 
 
     /* Behavioral UPI page (Page 5) */
@@ -446,6 +488,7 @@ html {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        cursor: url("assets/images/google-cursor2.png"), auto;
 
     }
 
@@ -477,6 +520,7 @@ html {
     .radio-group label {
         font-size: 14px;
         margin-right: 8px;
+
     }
 
 

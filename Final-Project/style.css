@@ -69,6 +69,7 @@ html {
     align-items: center;
     padding: 0px;
     position: absolute;
+    z-index: 1000;
 }
 
 /* Home icon */
@@ -1435,7 +1436,6 @@ You can only get throught it by the lock on google extraction page
 
 .final-bg input {
     display: none;
-    opacity: 0;
 }
 
 .typetoggle img {
